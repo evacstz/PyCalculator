@@ -12,7 +12,7 @@ while x != '0':
           0 - Sair
           ---------------------------
           ''')
-    x = input("Opção: ")
+    x = input("")
 
     if x == '0':
         print('tchau tchau🫡')
@@ -22,35 +22,30 @@ while x != '0':
         print('Você escolheu soma.')
         n1 = int(input("Primeiro número: "))
         n2 = int(input("Segundo número: "))
-        s = n1 + n2
-        print(f'{n1} + {n2} = {s}')
+        print(f'{n1} + {n2} = {n1 + n2}')
 
     elif x == '2':
         print('Você escolheu subtração.')
         n1 = int(input("Primeiro número: "))
         n2 = int(input("Segundo número: "))
-        sb = n1 - n2
-        print(f'{n1} - {n2} = {sb}')
+        print(f'{n1} - {n2} = {n1 - n2}')
 
     elif x == '3':
         print('Você escolheu multiplicação.')
         n1 = int(input("Primeiro número: "))
         n2 = int(input("Segundo número: "))
-        m = n1 * n2
-        print(f'{n1} * {n2} = {m}')
+        print(f'{n1} * {n2} = {n1 * n2}')
 
     elif x == '4':
         print('Você escolheu divisão.')
         n1 = int(input("Primeiro número: "))
         n2 = int(input("Segundo número: "))
-        d = n1 / n2
-        print(f'{n1} / {n2} = {d}')
+        print(f'{n1} / {n2} = {n1 / n2}')
 
     elif x == '5':
         print('Você escolheu elevar ao quadrado.')
         n1 = int(input("Número: "))
-        p = n1 ** 2
-        print(f'{n1}² = {p}')
+        print(f'{n1}² = {n1 ** 2}')
 
-    elif x != ['0', '1', '2', '3', '4', '5']:
+    else:
         print('Erro, tente novamente...')
